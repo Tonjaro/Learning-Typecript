@@ -19,4 +19,26 @@ employee = [
     [2, 'Jessie'],
     [3, 'Jessica']
 ];
-console.log(employee);
+//Unions are variables that are able to hold more than one type
+let pid = 'apple';
+pid = 1;
+const user = {
+    id: 1,
+    name: 'Tony'
+};
+//Assertions used to tell the code what type the variable is
+let cid = 1;
+let newCid = cid;
+//Functions in typescript 
+function addTwo(x, y) {
+    return x + y;
+}
+let fname = 'Tony';
+let lname = 'Bonki';
+console.log(fname + ' ' + lname);
+/* When you do not need to return a value in a funciton you
+can simply return void */
+function log(messege) {
+    console.log(messege);
+}
+log(true);

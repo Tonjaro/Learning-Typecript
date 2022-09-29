@@ -1,6 +1,6 @@
 # Learning Typescript
 
-This Repository will contain the progress of me learning how to use typescript as well as a typecript project that I will complete by the end of 2 weeks.
+This Repository will contain the progress of me learning how to use typescript following multiple yoiutube video crash courses and doing individual practice.
 
 ## Getting started
 

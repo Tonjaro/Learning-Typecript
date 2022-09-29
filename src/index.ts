@@ -40,3 +40,30 @@ const user: User ={
     id:1,
     name: 'Tony'
 }
+
+//Assertions used to tell the code what type the variable is
+
+let cid: any = 1
+let newCid = cid as string
+
+//Functions in typescript 
+
+function addTwo(x: number, y:number): number{
+    return x + y 
+}
+
+let fname: string = 'Tony'
+let lname: string = 'Bonki'
+
+console.log(fname + ' ' + lname)
+
+/* When you do not need to return a value in a funciton you 
+can simply return void */
+
+function log(messege:string|number|boolean){
+    console.log(messege)
+}
+
+log(true)
+
+//Interfaces a specific structure to an object or a function
