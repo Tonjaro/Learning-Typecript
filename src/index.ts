@@ -9,3 +9,9 @@ x = 1
 
 // Type of values in the array are determined by the name before the []
 let ids: number[] = [1,2,3,4,5]
+
+//Tuple
+let person: [number, string, boolean] = [
+    1, 'Tony', true
+]
+
