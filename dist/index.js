@@ -12,3 +12,11 @@ let ids = [1, 2, 3, 4, 5];
 let person = [
     1, 'Tony', true
 ];
+//Tuple Array
+let employee;
+employee = [
+    [1, 'John'],
+    [2, 'Jessie'],
+    [3, 'Jessica']
+];
+console.log(employee);

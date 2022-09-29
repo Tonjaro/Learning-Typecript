@@ -15,3 +15,28 @@ let person: [number, string, boolean] = [
     1, 'Tony', true
 ]
 
+//Tuple Array
+let employee: [number, string][]
+
+employee = [
+    [1, 'John'],
+    [2, 'Jessie'],
+    [3, 'Jessica']
+]
+
+//Unions are variables that are able to hold more than one type
+
+let pid: string|number = 'apple'
+pid = 1
+
+//Objects
+
+type User ={
+    id:number,
+    name:string
+}
+
+const user: User ={
+    id:1,
+    name: 'Tony'
+}
