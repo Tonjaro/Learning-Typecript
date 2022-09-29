@@ -67,3 +67,4 @@ function log(messege:string|number|boolean){
 log(true)
 
 //Interfaces a specific structure to an object or a function
+

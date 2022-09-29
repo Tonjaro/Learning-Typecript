@@ -42,3 +42,4 @@ function log(messege) {
     console.log(messege);
 }
 log(true);
+//Interfaces a specific structure to an object or a function
