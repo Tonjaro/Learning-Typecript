@@ -68,3 +68,44 @@ log(true)
 
 //Interfaces a specific structure to an object or a function
 
+interface UserInterface {
+    id:number,
+    name:string,
+    age?:number
+}
+
+const user1: UserInterface = {
+    id:1,
+    name:'Tony',
+    age:20
+}
+
+interface MathFunc {
+    (x:number,y:number,): number
+}
+
+const add: MathFunc = (x: number, y:number): number => x + y
+
+console.log(add(5, 5))
+
+// Classes THese are used to create multiple objects
+
+class Person {
+    private id:number //Data modifier to change varible to private you can only access the varible within th efile
+    protected name:string // You can only acess the variable within its class or extended classes
+
+    //Contructoris run whenever an object is instatiated in that class
+    constructor(id:number, name:string){
+        this.id = id
+        this.name = name
+        console.log(this.name + ' ' +  'has spawned');
+        
+    }
+
+    spawn(){
+        return `${this.name} has spawned with an ID of ${this.id}`
+    }
+
+}
+
+const tony = new Person(1, 'Tony')

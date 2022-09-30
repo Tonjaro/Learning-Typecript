@@ -42,4 +42,20 @@ function log(messege) {
     console.log(messege);
 }
 log(true);
-//Interfaces a specific structure to an object or a function
+const user1 = {
+    id: 1,
+    name: 'Tony',
+    age: 20
+};
+const add = (x, y) => x + y;
+console.log(add(5, 5));
+// Classes THese are used to create multiple objects
+class Person {
+    //Contructoris run whenever an object is instatiated in that class
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+        console.log(this.name + ' ' + 'has spawned');
+    }
+}
+const tony = new Person(1, 'Tony');
