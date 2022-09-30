@@ -57,5 +57,18 @@ class Person {
         this.name = name;
         console.log(this.name + ' ' + 'has spawned');
     }
+    spawn() {
+        return `${this.name} has spawned with an ID of ${this.id}`;
+    }
 }
 const tony = new Person(1, 'Tony');
+console.log(tony.spawn());
+//Extending Classes
+class Employee extends Person {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp1 = new Employee(1, 'Tonjaro', 'Front-end Website Dev support');
+console.log(emp1.name, emp1.position, emp1.spawn);

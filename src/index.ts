@@ -92,7 +92,7 @@ console.log(add(5, 5))
 
 class Person {
     private id:number //Data modifier to change varible to private you can only access the varible within th efile
-    protected name:string // You can only acess the variable within its class or extended classes
+    name:string // You can only acess the variable within its class or extended classes
 
     //Contructoris run whenever an object is instatiated in that class
     constructor(id:number, name:string){
@@ -109,3 +109,18 @@ class Person {
 }
 
 const tony = new Person(1, 'Tony')
+console.log(tony.spawn());
+
+
+//Extending Classes
+
+class Employee extends Person{
+    position:string
+    constructor(id:number, name:string, position:string){
+        super(id, name)
+        this.position =  position
+    }
+}
+
+const emp1 = new Employee(1, 'Tonjaro', 'Front-end Website Dev support')
+console.log(emp1.name, emp1.position, emp1.spawn);
